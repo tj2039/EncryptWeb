@@ -25,8 +25,8 @@ const Sha256Tool: React.FC = () => {
     <ToolLayout
       title="🔐 SHA-256 해시 계산"
       description="입력한 텍스트를 SHA-256으로 암호화합니다."
-      inputLabel="입력 텍스트"
-      outputLabel="SHA-256 결과"
+      inputLabel="input"
+      outputLabel="output"
       input={input}
       onInputChange={setInput}
       output={output}

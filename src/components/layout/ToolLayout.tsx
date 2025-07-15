@@ -40,7 +40,7 @@ const ToolLayout: React.FC<Props> = ({
       )}
 
       <div className="mb-6">
-        <label className={`block font-semibold mb-2 ${inputLabelColor}`}>input</label>
+        <label className={`block font-semibold mb-2 ${inputLabelColor}`}>{inputLabel}</label>
         <textarea
           className={`w-full h-48 md:h-64 lg:h-80 p-3 border rounded resize-y shadow-sm text-sm md:text-base ${colors.inputBg} ${colors.text}`}
           value={input}
@@ -49,7 +49,7 @@ const ToolLayout: React.FC<Props> = ({
       </div>
 
       <div>
-        <label className={`block font-semibold mb-2 ${outputLabelColor}`}>output</label>
+        <label className={`block font-semibold mb-2 ${outputLabelColor}`}>{outputLabel}</label>
         <textarea
           className={`w-full h-48 md:h-64 lg:h-80 p-3 border rounded resize-y shadow-sm text-sm md:text-base ${colors.outputBg} ${colors.text}`}
           readOnly

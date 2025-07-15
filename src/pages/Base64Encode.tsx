@@ -18,8 +18,8 @@ const Base64Encode: React.FC = () => {
     <ToolLayout
       title="🔐 Base64 인코딩"
       description="입력한 텍스트를 Base64 형식으로 인코딩합니다."
-      inputLabel="입력 텍스트"
-      outputLabel="Base64 인코딩 결과"
+      inputLabel="input"
+      outputLabel="output"
       input={input}
       onInputChange={setInput}
       output={output}
