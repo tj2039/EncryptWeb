@@ -40,7 +40,9 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, darkMode, toggleDa
         `}
       >
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-xl font-bold text-gray-800 dark:text-white">🔐 Encrypt Tools</h2>
+          <h2 className="text-xl font-bold text-gray-800 dark:text-white">
+            <Link to="/">🔐 Encrypt Tools</Link>
+          </h2>
           <button
             onClick={toggleDarkMode}
             className="text-sm px-2 py-1 border rounded hover:bg-gray-100 dark:hover:bg-gray-700"

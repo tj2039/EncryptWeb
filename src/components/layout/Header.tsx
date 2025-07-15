@@ -1,6 +1,7 @@
 // src/components/layout/Header.tsx
 import React from "react";
 import { Menu } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface HeaderProps {
   toggleSidebar: () => void;
@@ -22,7 +23,9 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar, darkMode, toggleDarkMode
         >
           <Menu className="w-5 h-5 text-gray-800 dark:text-white" />
         </button>
-        <h1 className="text-lg font-semibold text-gray-800 dark:text-white">🔐 Encrypt Tools</h1>
+        <h1 className="text-lg font-semibold text-gray-800 dark:text-white">
+            <Link to="/">🔐 Encrypt Tools</Link>
+        </h1>
       </div>
 
       <button
